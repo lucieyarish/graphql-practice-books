@@ -19,6 +19,6 @@ public class BookService {
     }
 
     public Optional<Book> findOne(Integer id) {
-        return bookJpaRepository.findById(id);
+        return bookJpaRepository.findById(id).stream().findFirst();
     }
 }

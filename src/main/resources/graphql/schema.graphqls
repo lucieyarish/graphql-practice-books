@@ -6,13 +6,23 @@ type Query {
 type Book {
     id: ID!
     title: String
-    pages: Int
+    bookDescription: String
+    isbn: String
+    totalPages: Int
+    publishedDate: Int
     author: Author
+    publisher: Publisher
 }
 
 type Author {
     id: ID!
     firstName: String
+    middleName: String
     lastName: String
     books: [Book]
+}
+
+type Publisher {
+    id: ID!
+    name: String
 }
