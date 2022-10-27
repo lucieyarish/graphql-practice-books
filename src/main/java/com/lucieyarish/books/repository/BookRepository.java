@@ -1,7 +1,6 @@
 package com.lucieyarish.books.repository;
 
 import com.lucieyarish.books.model.Book;
-import com.lucieyarish.books.model.Rating;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 

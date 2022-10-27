@@ -13,21 +13,15 @@ import lombok.Setter;
 @Getter
 @Setter
 @Data
-@Table(name = "author")
+@Table(name = "publisher")
 @Entity
-public class Author {
+public class Publisher {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "first_name")
-    private String firstName;
-
-    @Column(name = "middle_name")
-    private String middleName;
-
-    @Column(name = "last_name")
-    private String lastName;
+    @Column(name = "name")
+    private String name;
 }
