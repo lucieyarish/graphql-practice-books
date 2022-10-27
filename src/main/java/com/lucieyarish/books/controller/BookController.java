@@ -1,7 +1,6 @@
 package com.lucieyarish.books.controller;
 
 import com.lucieyarish.books.model.Book;
-import com.lucieyarish.books.repository.BookRepository;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
